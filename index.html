@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="assets/css/starter.css">
+    <script defer src="assets/js/app.js"></script>
     <title>Todoify - The Next GEN Todo</title>
   </head>
  <body>
@@ -15,26 +16,22 @@
      </div>
     </div>
 
-    <div class="row input-group mb-3 justify-content-center">
-      <div class="col-lg-6 ">
-        <input type="text" class="form-control" placeholder="What's today?">
-        <button class="btn btn-outline-secondary" type="button" id="todo-add-btn">Add Todo</button>
+    <form id="todoform" action="/">
+   
+      <div class="row mb-3 justify-content-center">
+        <div class="col-lg-6 ">
+          <input id="todoinput" type="text" class="form-control" placeholder="What's today?">
+          <button class="btn btn-outline-secondary" type="submit" id="todo-add-btn">Add Todo</button>
+        </div>
       </div>
-    </div>
+  
+      <div class="row todo-section justify-content-center">
+       <div class="col-lg-6">
+        <ul id="todo-section-list" class="list-group">
+        </ul>
+       </div>
+      </div>
+    </form>
 
-    <div class="row todo-section justify-content-center">
-     <div class="col-lg-6">
-      <ul class="list-group">
-        <li class="list-group-item">
-          <input type="checkbox" class="form-check-input me-1">
-          Learn JS
-        </li>
-        <li class="list-group-item">
-          <input type="checkbox" class="form-check-input me-1">
-          Learn Node
-        </li>
-      </ul>
-     </div>
-    </div>
  </body>
 </html>
