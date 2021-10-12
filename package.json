@@ -49,7 +49,5 @@
     "stylelint": "^13.12.0",
     "stylelint-config-twbs-bootstrap": "^2.1.0"
   },
-  "devDependencies": {
-    
-  }
+  "devDependencies": {}
 }
