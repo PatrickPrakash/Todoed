@@ -1,0 +1,30 @@
+// Overrrided the input group to maintain the width of the input group 
+.todo-input-group {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap; // For form validation feedback
+    align-items: stretch;
+    //removed the width attribute
+
+    > .form-control,
+    > .form-select {
+      position: relative; // For focus state's z-index
+      flex: 1 1 auto;
+      width: 1%;
+      min-width: 0; // https://stackoverflow.com/questions/36247140/why-dont-flex-items-shrink-past-content-size
+    }
+  
+    > .form-control:focus,
+    > .form-select:focus {
+      z-index: 3;
+    }
+
+    .btn {
+      position: relative;
+      z-index: 2;
+  
+      &:focus {
+        z-index: 3;
+      }
+    }
+  }
